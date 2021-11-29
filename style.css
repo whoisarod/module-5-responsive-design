@@ -1,9 +1,23 @@
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 10px;
     font-family: 'Lato', sans-serif;
     color: #2e354f;
 }
+
+.section-one {
+    font-size: 2rem;
+}
+
+ul {
+    /* 1.5em = 150% */
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
 
 h1,
 h2,
@@ -14,12 +28,12 @@ strong {
 /* Typography */
 
 h1 {
-    font-size: 36px;
+    font-size: 3rem;
     margin: 0;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 2rem;
     color: #ef5839;
 }
 
@@ -73,9 +87,7 @@ section {
 }
 
 .container {
-    border: 2px solid magenta;
-    width: 90%;
-    max-width: 620px;
+    width: 620px;
     margin: 0 auto;
     /* border: 2px solid magenta; */
 }
@@ -83,8 +95,4 @@ section {
 .section-two {
     background: #2e354f;
     color: #fff;
-}
-
-img {
-    width: 100%;
 }
