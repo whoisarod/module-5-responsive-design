@@ -1,78 +1,102 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 body {
-    font-size: 1.125rem;
-    color: #707070;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
     margin: 0;
 }
 
-/* Typography */
-
-h1 {
-    font-size: 3rem;
-    color: #212614;
-    text-align: center;
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
 }
 
-h1 span {
-    color: #b7832f;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    margin-top: 0;
-}
-
-
-/*  Layout  */
-
-img {
-    max-width: 100%;
-}
+/* =================
+Layout
+================= */
 
 .container {
-    width: 95%;
-    max-width: 980px;
+    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.columns {
+.container-nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-@media (max-width: 600px) {
-    
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
 }
 
-.col-1 {
-    width: 20%;
-}
-
-.col-2 {
-    width: 45%;
-}
-
-.col-3 {
-    width: 70%;
-}
-
-.col-bg {
-    background: #212614;
-    color: #fff;
-    padding: 1em;
-}
-
-@media (max-width: 600px) {
-    .columns {
+@media (max-width: 675px) {
+    .container-nav {
         flex-direction: column;
     }
 
-    .col-1,
-    .col-2,
-    .col-3 {
-        width: 100%;
+    header {
+        text-align: center;
+    }
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
     }
 }
